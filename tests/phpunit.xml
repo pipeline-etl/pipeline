@@ -15,8 +15,8 @@
          displayDetailsOnTestsThatTriggerWarnings="true"
          displayDetailsOnPhpunitDeprecations="true">
     <testsuites>
-        <testsuite name="Pipeline">
-            <directory>../src/Pipeline/Tests/</directory>
+        <testsuite name="Flatteners">
+            <directory>../src/Pipeline/Flatteners/Tests/</directory>
         </testsuite>
     </testsuites>
     <coverage>
@@ -33,7 +33,7 @@
             <directory>../src/Pipeline/</directory>
         </include>
         <exclude>
-            <directory>../src/Pipeline/Tests/</directory>
+            <directory>../src/Pipeline/Flatteners/Tests/</directory>
         </exclude>
     </source>
 </phpunit>
