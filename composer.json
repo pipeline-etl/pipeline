@@ -1,5 +1,5 @@
 {
-  "name": "pipeline/pipeline",
+  "name": "pipeline-etl/pipeline",
   "description": "Pipeline is the core component for extracting and transforming data",
   "keywords": [ "pipeline-etl", "data import", "ETL" ],
   "homepage": "https://github.com/pipeline-etl/pipeline",
