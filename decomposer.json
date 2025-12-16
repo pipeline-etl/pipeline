@@ -1,2 +1,29 @@
 {
+    "Lunr.Halo": {
+        "url": "https://github.com/lunr-php/lunr.halo.git",
+        "version": "0.12.0",
+        "revision": "master",
+        "psr4": {
+            "prefix": "Lunr\\Halo",
+            "search-path": "/src/Lunr/Halo/"
+        },
+        "development-only": true
+    },
+    "Pipeline.Common": {
+        "url": "https://github.com/pipeline-etl/pipeline.common.git",
+        "version": "0.9.0",
+        "revision": "master",
+        "psr4": {
+            "prefix": "Pipeline",
+            "search-path": "/src/Pipeline/"
+        }
+    },
+    "Psr-Log": {
+        "url": "https://github.com/php-fig/log.git",
+        "version": "3.0.2",
+        "psr4": {
+            "prefix": "Psr\\Log",
+            "search-path": "/src/"
+        }
+    }
 }
