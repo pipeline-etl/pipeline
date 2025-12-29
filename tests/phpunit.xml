@@ -18,6 +18,9 @@
         <testsuite name="Flatteners">
             <directory>../src/Pipeline/Flatteners/Tests/</directory>
         </testsuite>
+        <testsuite name="Preprocessors">
+            <directory>../src/Pipeline/Preprocessors/Tests/</directory>
+        </testsuite>
         <testsuite name="Processors">
             <directory>../src/Pipeline/Processors/Tests/</directory>
         </testsuite>
@@ -37,6 +40,7 @@
         </include>
         <exclude>
             <directory>../src/Pipeline/Flatteners/Tests/</directory>
+            <directory>../src/Pipeline/Preprocessors/Tests/</directory>
             <directory>../src/Pipeline/Processors/Tests/</directory>
         </exclude>
     </source>

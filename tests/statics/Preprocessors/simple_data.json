@@ -1,0 +1,20 @@
+[
+    {
+        "fieldA": "100",
+        "fieldB": "10.0",
+        "fieldC": 422,
+        "fieldD": 0,
+        "fieldE": "A",
+        "fieldF": 200,
+        "fieldG": null
+    },
+    {
+        "fieldA": "200",
+        "fieldB": "20.0",
+        "fieldC": 522,
+        "fieldD": 1,
+        "fieldE": "B",
+        "fieldF": 100,
+        "fieldG": null
+    }
+]
