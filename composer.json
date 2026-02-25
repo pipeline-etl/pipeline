@@ -1,26 +1,32 @@
 {
-  "name": "pipeline-etl/pipeline",
-  "description": "Pipeline is the core component for extracting and transforming data",
-  "keywords": [ "pipeline-etl", "data import", "ETL" ],
-  "homepage": "https://github.com/pipeline-etl/pipeline",
-  "type": "library",
-  "license": "MIT",
-  "minimum-stability": "dev",
-  "require": {
-    "php": ">=8.3",
-    "pipeline-etl/common": "dev-master",
-    "psr/log": ">=3.0"
-  },
-  "require-dev": {
-    "phpunit/phpunit": ">=10.5 <11.0",
-    "mockery/mockery": "~1.6",
-    "ext-xdebug": "~3.1",
-    "lunr/halo": "dev-master"
-  },
-  "config": {
-    "optimize-autoloader": true
-  },
-  "autoload": {
-    "psr-4": {"Pipeline\\": "src/Pipeline/"}
-  }
+    "name": "pipeline-etl/pipeline",
+    "description": "Pipeline is the core component for extracting and transforming data",
+    "keywords": [
+        "pipeline-etl",
+        "data import",
+        "ETL"
+    ],
+    "homepage": "https://github.com/pipeline-etl/pipeline",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=8.3",
+        "pipeline-etl/common": "dev-master",
+        "psr/log": ">=3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": ">=10.5 <11.0",
+        "mockery/mockery": "~1.6",
+        "ext-xdebug": "~3.1",
+        "lunr/halo": "dev-master"
+    },
+    "config": {
+        "optimize-autoloader": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Pipeline\\": "src/Pipeline/"
+        }
+    }
 }
