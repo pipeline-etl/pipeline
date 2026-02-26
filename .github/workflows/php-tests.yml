@@ -13,7 +13,7 @@ jobs:
       allow-phpstan-failures: false
       codestyle-branch: '0.11.0'
       phpcs-whitelist: tests/phpstan.bootstrap.inc.php tests/test.bootstrap.inc.php
-      php-extensions: uopz
+      php-extensions: uopz, uuid
       stable-php-versions: '["8.3"]'
       experimental-php-versions: '["8.4","8.5"]'
       minimum-phpunit-version: '10.5.x'
