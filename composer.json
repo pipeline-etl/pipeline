@@ -10,19 +10,38 @@
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        },
+        "optimize-autoloader": true
+    },
     "require": {
         "php": ">=8.3",
         "pipeline-etl/common": "dev-master",
         "psr/log": ">=3.0"
     },
     "require-dev": {
-        "phpunit/phpunit": ">=10.5 <11.0",
+        "framna-nl/php-library-justfiles": "dev-master",
+        "lunr/coding-standard": "0.12.0",
+        "lunr/halo": "dev-master",
         "mockery/mockery": "~1.6",
-        "ext-xdebug": "~3.1",
-        "lunr/halo": "dev-master"
+        "phpstan/phpstan": "~2.1.36",
+        "phpunit/phpunit": ">=10.5 <11.0",
+        "squizlabs/php_codesniffer": ">=4.0",
+        "shipmonk/composer-dependency-analyser": "~1.8"
     },
-    "config": {
-        "optimize-autoloader": true
+    "scripts": {
+        "phpcs": [
+            "just phpcs"
+        ],
+        "phpstan": [
+            "just phpstan"
+        ],
+        "phpunit": [
+            "just phpunit"
+        ]
     },
     "autoload": {
         "psr-4": {
