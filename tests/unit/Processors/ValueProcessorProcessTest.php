@@ -7,7 +7,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-namespace Pipeline\Processors\Tests;
+namespace Pipeline\Tests\Processors;
 
 use Lunr\Halo\PropertyTraits\PsrLoggerTestTrait;
 

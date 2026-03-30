@@ -15,6 +15,6 @@ Files: README.md
 Copyright: 2025 Framna Netherlands B.V., Zwolle, The Netherlands
 License: CC0-1.0
 
-Files: tests/statics/*
+Files: tests/unit/statics/*
 Copyright: 2025 Framna Netherlands B.V., Zwolle, The Netherlands
 License: MIT

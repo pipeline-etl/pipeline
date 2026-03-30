@@ -7,7 +7,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-namespace Pipeline\Preprocessors\Tests;
+namespace Pipeline\Tests\Preprocessors;
 
 /**
  * This class contains tests for the ProcessorProcessor class.
