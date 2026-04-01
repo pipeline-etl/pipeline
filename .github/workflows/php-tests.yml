@@ -7,6 +7,11 @@ on: [push, pull_request, workflow_dispatch]
 jobs:
   php-tests:
     uses: lunr-php/actions-templates/.github/workflows/php-library.yml@826ca60a8afd857beead02ab5b6f6a44a707650c # 0.12.0
+    permissions:
+      contents: read
+      issues: read
+      checks: write
+      pull-requests: write
     secrets:
       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     with:
