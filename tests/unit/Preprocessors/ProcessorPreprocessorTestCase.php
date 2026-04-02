@@ -7,7 +7,7 @@
  * SPDX-License-Identifier: MIT
  */
 
-namespace Pipeline\Preprocessors\Tests;
+namespace Pipeline\Tests\Preprocessors;
 
 use Lunr\Halo\LunrBaseTestCase;
 use Mockery;
