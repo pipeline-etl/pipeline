@@ -6,7 +6,7 @@ on: [push, pull_request, workflow_dispatch]
 
 jobs:
   ec-checker:
-    uses: lunr-php/actions-templates/.github/workflows/ec-checker.yml@826ca60a8afd857beead02ab5b6f6a44a707650c # 0.12.0
+    uses: lunr-php/actions-templates/.github/workflows/ec-checker.yml@c1391d5e0077a2dee6c151ea8be35edcb2b31af8 # 0.14.2
     with:
       excludes: '.*\.php$'
   reuse:
