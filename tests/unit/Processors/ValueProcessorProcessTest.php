@@ -9,8 +9,6 @@
 
 namespace Pipeline\Tests\Processors;
 
-use Lunr\Halo\PropertyTraits\PsrLoggerTestTrait;
-
 /**
  * This class contains tests for the ValueProcessor class.
  *
@@ -18,8 +16,6 @@ use Lunr\Halo\PropertyTraits\PsrLoggerTestTrait;
  */
 class ValueProcessorProcessTest extends ValueProcessorTestCase
 {
-
-    use PsrLoggerTestTrait;
 
     /**
      * Test process() with an empty configuration.
@@ -31,8 +27,8 @@ class ValueProcessorProcessTest extends ValueProcessorTestCase
         $input  = json_decode(file_get_contents(TEST_STATICS . '/Processors/simple_item.json'), TRUE);
         $config = [];
 
-        $this->logger->expects($this->once())
-                     ->method('log')
+        $this->logger->shouldReceive('log')
+                     ->once()
                      ->with('warning', '[{class}]{index} {message}', [
                          'class' => 'ValueProcessor',
                          'index' => '',
@@ -56,7 +52,8 @@ class ValueProcessorProcessTest extends ValueProcessorTestCase
 
         $result = $this->class->process($input, $config);
 
-        $this->assertArrayNotEmpty($result);
+        $this->assertIsArray($result);
+        $this->assertNotEmpty($result);
         $this->assertArrayHasKey('fieldA', $result);
         $this->assertArrayHasKey('fieldB', $result);
         $this->assertArrayHasKey('fieldC', $result);
@@ -80,7 +77,8 @@ class ValueProcessorProcessTest extends ValueProcessorTestCase
 
         $result = $this->class->process($input, $config);
 
-        $this->assertArrayNotEmpty($result);
+        $this->assertIsArray($result);
+        $this->assertNotEmpty($result);
         $this->assertArrayHasKey('fieldA', $result);
         $this->assertArrayHasKey('fieldB', $result);
         $this->assertArrayHasKey('fieldC', $result);

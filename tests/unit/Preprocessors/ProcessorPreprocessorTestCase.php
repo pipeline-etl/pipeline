@@ -9,11 +9,9 @@
 
 namespace Pipeline\Tests\Preprocessors;
 
-use Lunr\Halo\LunrBaseTestCase;
 use Mockery;
-use Mockery\Adapter\Phpunit\MockeryPHPUnitIntegration;
+use Mockery\Adapter\Phpunit\MockeryTestCase;
 use Mockery\MockInterface;
-use PHPUnit\Framework\MockObject\MockObject;
 use Pipeline\Common\ProcessorRunnerInterface;
 use Pipeline\Preprocessors\ProcessorPreprocessor;
 use Psr\Log\LoggerInterface;
@@ -24,16 +22,14 @@ use Psr\Log\LoggerInterface;
  *
  * @covers Pipeline\Preprocessors\ProcessorPreprocessor
  */
-abstract class ProcessorPreprocessorTestCase extends LunrBaseTestCase
+abstract class ProcessorPreprocessorTestCase extends MockeryTestCase
 {
-
-    use MockeryPHPUnitIntegration;
 
     /**
      * Mock instance of a logger class.
-     * @var LoggerInterface&MockObject
+     * @var LoggerInterface&MockInterface
      */
-    protected LoggerInterface&MockObject $logger;
+    protected LoggerInterface&MockInterface $logger;
 
     /**
      * Mock instance of a processor runner.
@@ -52,12 +48,12 @@ abstract class ProcessorPreprocessorTestCase extends LunrBaseTestCase
      */
     public function setUp(): void
     {
-        $this->logger = $this->getMockBuilder(LoggerInterface::class)->getMock();
+        parent::setUp();
+
+        $this->logger = Mockery::mock(LoggerInterface::class);
         $this->runner = Mockery::mock(ProcessorRunnerInterface::class);
 
         $this->class = new ProcessorPreprocessor($this->logger);
-
-        $this->baseSetUp($this->class);
     }
 
     /**

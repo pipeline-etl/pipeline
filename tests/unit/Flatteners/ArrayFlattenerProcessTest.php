@@ -9,8 +9,6 @@
 
 namespace Pipeline\Tests\Flatteners;
 
-use Lunr\Halo\PropertyTraits\PsrLoggerTestTrait;
-
 /**
  * This class contains tests for the ArrayFlattener class.
  *
@@ -18,8 +16,6 @@ use Lunr\Halo\PropertyTraits\PsrLoggerTestTrait;
  */
 class ArrayFlattenerProcessTest extends ArrayFlattenerTestCase
 {
-
-    use PsrLoggerTestTrait;
 
     /**
      * Test that process() flattens multidimensional arrays.
@@ -50,7 +46,8 @@ class ArrayFlattenerProcessTest extends ArrayFlattenerTestCase
 
         $result = $this->class->process($data, $config);
 
-        $this->assertArrayEmpty($result);
+        $this->assertIsArray($result);
+        $this->assertEmpty($result);
     }
 
 }

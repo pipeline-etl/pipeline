@@ -32,8 +32,8 @@ class ProcessorPreprocessorProcessTest extends ProcessorPreprocessorTestCase
         $this->runner->shouldReceive('run')
                      ->never();
 
-        $this->logger->expects($this->once())
-                     ->method('log')
+        $this->logger->shouldReceive('log')
+                     ->once()
                      ->with('warning', '[{class}]{index} {message}', [
                          'class' => 'ProcessorPreprocessor',
                          'index' => '',
@@ -59,8 +59,8 @@ class ProcessorPreprocessorProcessTest extends ProcessorPreprocessorTestCase
         $this->runner->shouldReceive('run')
                      ->never();
 
-        $this->logger->expects($this->once())
-                     ->method('log')
+        $this->logger->shouldReceive('log')
+                     ->once()
                      ->with('warning', '[{class}]{index} {message}', [
                          'class' => 'ProcessorPreprocessor',
                          'index' => '',
@@ -86,8 +86,8 @@ class ProcessorPreprocessorProcessTest extends ProcessorPreprocessorTestCase
         $this->runner->shouldReceive('run')
                      ->never();
 
-        $this->logger->expects($this->once())
-                     ->method('log')
+        $this->logger->shouldReceive('log')
+                     ->once()
                      ->with('warning', '[{class}]{index} {message}', [
                          'class' => 'ProcessorPreprocessor',
                          'index' => '[@0]',
@@ -113,8 +113,8 @@ class ProcessorPreprocessorProcessTest extends ProcessorPreprocessorTestCase
         $this->runner->shouldReceive('run')
                      ->never();
 
-        $this->logger->expects($this->once())
-                     ->method('log')
+        $this->logger->shouldReceive('log')
+                     ->once()
                      ->with('warning', '[{class}]{index} {message}', [
                          'class' => 'ProcessorPreprocessor',
                          'index' => '[@0]',
@@ -231,8 +231,8 @@ class ProcessorPreprocessorProcessTest extends ProcessorPreprocessorTestCase
             $expected[] = $item + [ 'hello' => 'world' ];
         }
 
-        $this->logger->expects($this->once())
-                     ->method('log')
+        $this->logger->shouldReceive('log')
+                     ->once()
                      ->with('warning', '[{class}]{index} {message}', [
                          'class' => 'ProcessorPreprocessor',
                          'index' => '[@1]',
@@ -275,8 +275,8 @@ class ProcessorPreprocessorProcessTest extends ProcessorPreprocessorTestCase
             $expected[] = $item + [ 'foo' => 'bar' ];
         }
 
-        $this->logger->expects($this->once())
-                     ->method('log')
+        $this->logger->shouldReceive('log')
+                     ->once()
                      ->with('warning', '[{class}]{index} {message}', [
                          'class' => 'ProcessorPreprocessor',
                          'index' => '[@0]',
