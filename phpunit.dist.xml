@@ -26,6 +26,9 @@
         <testsuite name="Processors">
             <directory>tests/unit/Processors/</directory>
         </testsuite>
+        <testsuite name="Sources">
+            <directory>tests/unit/Sources/</directory>
+        </testsuite>
     </testsuites>
     <coverage>
         <report>
