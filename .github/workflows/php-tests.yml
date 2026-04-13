@@ -18,6 +18,6 @@ jobs:
       coding-standard: 'Lunr'
       minimum-php-version: '8.3'
       phpcs-whitelist: tests/phpstan.bootstrap.inc.php tests/test.bootstrap.inc.php
-      php-extensions: uopz, uuid
+      php-extensions: uuid
       stable-php-versions: '["8.3"]'
       experimental-php-versions: '["8.4","8.5"]'

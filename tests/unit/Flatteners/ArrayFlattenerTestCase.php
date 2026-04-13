@@ -9,8 +9,9 @@
 
 namespace Pipeline\Tests\Flatteners;
 
-use Lunr\Halo\LunrBaseTestCase;
-use PHPUnit\Framework\MockObject\MockObject;
+use Mockery;
+use Mockery\Adapter\Phpunit\MockeryTestCase;
+use Mockery\MockInterface;
 use Pipeline\Flatteners\ArrayFlattener;
 use Psr\Log\LoggerInterface;
 
@@ -20,14 +21,14 @@ use Psr\Log\LoggerInterface;
  *
  * @covers Pipeline\Flatteners\ArrayFlattener
  */
-abstract class ArrayFlattenerTestCase extends LunrBaseTestCase
+abstract class ArrayFlattenerTestCase extends MockeryTestCase
 {
 
     /**
      * Mock instance of a logger class.
-     * @var LoggerInterface&MockObject
+     * @var LoggerInterface&MockInterface
      */
-    protected LoggerInterface&MockObject $logger;
+    protected LoggerInterface&MockInterface $logger;
 
     /**
      * Instance of the tested class.
@@ -40,11 +41,11 @@ abstract class ArrayFlattenerTestCase extends LunrBaseTestCase
      */
     public function setUp(): void
     {
-        $this->logger = $this->getMockBuilder(LoggerInterface::class)->getMock();
+        parent::setUp();
+
+        $this->logger = Mockery::mock(LoggerInterface::class);
 
         $this->class = new ArrayFlattener($this->logger);
-
-        $this->baseSetUp($this->class);
     }
 
     /**
