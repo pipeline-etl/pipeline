@@ -1,0 +1,27 @@
+{
+    "sources": [
+        {
+            "foo": {
+                "url": "https://api.example.com/"
+            }
+        }
+    ],
+    "flattener": {
+        "foo": {
+            "nkey1": "key1",
+            "nkey2": "key2"
+        }
+    },
+    "parser": {
+        "foo": {
+            "processors": [
+                {
+                    "convert": {
+                        "field": "nkey1",
+                        "type": "boolean"
+                    }
+                }
+            ]
+        }
+    }
+}

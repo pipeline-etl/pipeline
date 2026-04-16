@@ -1,0 +1,19 @@
+{
+    "sources": [
+        {
+            "foo": {
+                "url": "https://api1.example.com/"
+            }
+        },
+        {
+            "foo": {
+                "url": "https://api2.example.com/"
+            }
+        }
+    ],
+    "flattener": {
+        "foo": {
+            "nkey1": "key1"
+        }
+    }
+}

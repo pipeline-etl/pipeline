@@ -5,3 +5,8 @@ parameters:
     level: 10
     paths:
         - ../src
+    ignoreErrors:
+    -
+            identifier: property.uninitializedReadonly
+    -
+            identifier: property.readOnlyAssignNotInConstructor

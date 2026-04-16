@@ -1,0 +1,9 @@
+{
+    "sources": [
+        {
+            "http": {
+                "url": "https://api.example.com/"
+            }
+        }
+    ]
+}

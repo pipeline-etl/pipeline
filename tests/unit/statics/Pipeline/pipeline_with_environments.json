@@ -1,0 +1,19 @@
+{
+    "sources": [
+        {
+            "foo": {
+                "acceptance": {
+                    "url": "https://acc.example.com/"
+                },
+                "production": {
+                    "url": "https://prod.example.com/"
+                }
+            }
+        }
+    ],
+    "flattener": {
+        "foo": {
+            "nkey1": "key1"
+        }
+    }
+}

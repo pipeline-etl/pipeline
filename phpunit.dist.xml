@@ -29,6 +29,9 @@
         <testsuite name="Sources">
             <directory>tests/unit/Sources/</directory>
         </testsuite>
+        <testsuite name="Pipeline">
+            <directory>tests/unit/Pipeline/</directory>
+        </testsuite>
     </testsuites>
     <coverage>
         <report>

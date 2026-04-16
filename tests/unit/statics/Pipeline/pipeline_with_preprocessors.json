@@ -1,0 +1,22 @@
+{
+    "sources": [
+        {
+            "foo": {
+                "url": "https://api.example.com/"
+            }
+        }
+    ],
+    "flattener": {
+        "foo": {
+            "nkey1": "key1",
+            "nkey2": "key2"
+        }
+    },
+    "preprocessors": [
+        {
+            "foo_pre": {
+                "field": "nkey1"
+            }
+        }
+    ]
+}

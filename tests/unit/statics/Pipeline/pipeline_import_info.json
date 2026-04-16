@@ -1,0 +1,50 @@
+{
+    "import_info": {
+        "table": "foo",
+        "content-type": "bar",
+        "content-range": [
+            {
+                "identifier": {}
+            }
+        ],
+        "flags": {
+            "skip_empty": false
+        },
+        "hooks": [
+            "hook1",
+            "hook2"
+        ],
+        "notifications": [{
+            "queue": "Notifications1",
+            "job": {
+                "new": "NewDataJob1",
+                "obsolete": "ObsoleteDataJob1"
+            },
+            "languages": [
+                "en-US"
+            ]
+        },{
+            "queue": "Notifications2",
+            "job": {
+                "new": "NewDataJob2",
+                "obsolete": "ObsoleteDataJob2"
+            },
+            "languages": [
+                "en-US"
+            ]
+        }]
+    },
+    "sources": [
+        {
+            "http": {
+                "url": "https://api.example.com/"
+            }
+        }
+    ],
+    "flattener": {
+        "json": {
+            "key1": "value1",
+            "key2": "value2"
+        }
+    }
+}

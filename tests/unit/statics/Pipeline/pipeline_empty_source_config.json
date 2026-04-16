@@ -1,0 +1,12 @@
+{
+    "sources": [
+        {
+            "foo": {}
+        }
+    ],
+    "flattener": {
+        "foo": {
+            "nkey1": "key1"
+        }
+    }
+}

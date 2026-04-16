@@ -1,0 +1,32 @@
+{
+    "info": {},
+    "sources": [
+        {
+            "http": {
+                "url": "https://api.example.com/"
+            }
+        }
+    ],
+    "flattener": {
+        "json": {
+            "key1": "value1",
+            "key2": "value2"
+        }
+    },
+    "processors": [
+        {
+            "convert": {
+                "field": "key1",
+                "type": "boolean"
+            }
+        },
+        {
+            "merge": {
+                "key2": [
+                    "key3",
+                    "key4"
+                ]
+            }
+        }
+    ]
+}

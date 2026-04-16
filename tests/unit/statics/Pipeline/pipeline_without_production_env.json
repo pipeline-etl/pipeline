@@ -1,0 +1,16 @@
+{
+    "sources": [
+        {
+            "foo": {
+                "test": {
+                    "url": "https://test.example.com/"
+                }
+            }
+        }
+    ],
+    "flattener": {
+        "foo": {
+            "nkey1": "key1"
+        }
+    }
+}
