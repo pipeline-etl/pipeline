@@ -1,0 +1,30 @@
+{
+    "total": 10,
+    "items": [
+        {
+            "id": "item-1",
+            "type": "post",
+            "title": "First"
+        },
+        {
+            "id": "item-2",
+            "type": "post",
+            "title": "Second"
+        },
+        {
+            "id": "item-3",
+            "type": "page",
+            "title": "Third"
+        }
+    ],
+    "includes": {
+        "Entry": [
+            { "id": "ref-1", "type": "author" },
+            { "id": "ref-2", "type": "author" },
+            { "id": "ref-3", "type": "category" },
+            { "id": "ref-4", "type": "category" },
+            { "id": "ref-5", "type": "tag" },
+            { "id": "ref-6", "type": "tag" }
+        ]
+    }
+}

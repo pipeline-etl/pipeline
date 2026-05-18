@@ -1,0 +1,197 @@
+{
+    "schemaVersion": 3,
+    "flights": [
+        {
+            "actualLandingTime": "2024-01-15T08:30:00.000+01:00",
+            "actualOffBlockTime": null,
+            "airlineCode": 100,
+            "checkinAllocations": null,
+            "flightName": "XX1001",
+            "gate": "A1",
+            "terminal": 1
+        },
+        {
+            "actualLandingTime": "2024-01-15T09:15:00.000+01:00",
+            "actualOffBlockTime": "2024-01-15T06:00:00.000+01:00",
+            "airlineCode": 200,
+            "checkinAllocations": null,
+            "flightName": "YY2002",
+            "gate": "B3",
+            "terminal": 2
+        },
+        {
+            "actualLandingTime": null,
+            "actualOffBlockTime": null,
+            "airlineCode": 300,
+            "checkinAllocations": null,
+            "flightName": "ZZ3003",
+            "gate": null,
+            "terminal": 1
+        },
+        {
+            "actualLandingTime": "2024-01-15T10:45:00.000+01:00",
+            "actualOffBlockTime": null,
+            "airlineCode": 100,
+            "checkinAllocations": null,
+            "flightName": "XX1004",
+            "gate": "C5",
+            "terminal": 1
+        },
+        {
+            "actualLandingTime": null,
+            "actualOffBlockTime": "2024-01-15T11:00:00.000+01:00",
+            "airlineCode": 400,
+            "checkinAllocations": null,
+            "flightName": "AA4005",
+            "gate": "D2",
+            "terminal": 2
+        },
+        {
+            "actualLandingTime": "2024-01-15T12:30:00.000+01:00",
+            "actualOffBlockTime": null,
+            "airlineCode": 500,
+            "checkinAllocations": {
+                "checkinAllocations": [
+                    {
+                        "startTime": "2024-01-15T09:00:00.000+01:00",
+                        "endTime": "2024-01-15T11:00:00.000+01:00",
+                        "rows": {
+                            "rows": [
+                                { "position": "1", "desk": { "checkinClass": { "code": "Y" } } }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "flightName": "BB5006",
+            "gate": "E4",
+            "terminal": 1
+        },
+        {
+            "actualLandingTime": null,
+            "actualOffBlockTime": null,
+            "airlineCode": 200,
+            "checkinAllocations": null,
+            "flightName": "YY2007",
+            "gate": "A2",
+            "terminal": 2
+        },
+        {
+            "actualLandingTime": "2024-01-15T14:00:00.000+01:00",
+            "actualOffBlockTime": null,
+            "airlineCode": 300,
+            "checkinAllocations": null,
+            "flightName": "ZZ3008",
+            "gate": "B1",
+            "terminal": 1
+        },
+        {
+            "actualLandingTime": null,
+            "actualOffBlockTime": "2024-01-15T15:30:00.000+01:00",
+            "airlineCode": 100,
+            "checkinAllocations": null,
+            "flightName": "XX1009",
+            "gate": null,
+            "terminal": 2
+        },
+        {
+            "actualLandingTime": "2024-01-15T16:00:00.000+01:00",
+            "actualOffBlockTime": null,
+            "airlineCode": 400,
+            "checkinAllocations": null,
+            "flightName": "AA4010",
+            "gate": "C3",
+            "terminal": 1
+        },
+        {
+            "actualLandingTime": null,
+            "actualOffBlockTime": null,
+            "airlineCode": 500,
+            "checkinAllocations": null,
+            "flightName": "BB5011",
+            "gate": "D1",
+            "terminal": 2
+        },
+        {
+            "actualLandingTime": "2024-01-15T17:45:00.000+01:00",
+            "actualOffBlockTime": "2024-01-15T14:30:00.000+01:00",
+            "airlineCode": 200,
+            "checkinAllocations": null,
+            "flightName": "YY2012",
+            "gate": "E2",
+            "terminal": 1
+        },
+        {
+            "actualLandingTime": null,
+            "actualOffBlockTime": null,
+            "airlineCode": 300,
+            "checkinAllocations": null,
+            "flightName": "ZZ3013",
+            "gate": "A4",
+            "terminal": 2
+        },
+        {
+            "actualLandingTime": "2024-01-15T19:00:00.000+01:00",
+            "actualOffBlockTime": null,
+            "airlineCode": 100,
+            "checkinAllocations": null,
+            "flightName": "XX1014",
+            "gate": "B2",
+            "terminal": 1
+        },
+        {
+            "actualLandingTime": null,
+            "actualOffBlockTime": "2024-01-15T20:15:00.000+01:00",
+            "airlineCode": 400,
+            "checkinAllocations": null,
+            "flightName": "AA4015",
+            "gate": null,
+            "terminal": 2
+        },
+        {
+            "actualLandingTime": "2024-01-15T21:00:00.000+01:00",
+            "actualOffBlockTime": null,
+            "airlineCode": 500,
+            "checkinAllocations": null,
+            "flightName": "BB5016",
+            "gate": "C1",
+            "terminal": 1
+        },
+        {
+            "actualLandingTime": null,
+            "actualOffBlockTime": null,
+            "airlineCode": 200,
+            "checkinAllocations": null,
+            "flightName": "YY2017",
+            "gate": "D4",
+            "terminal": 2
+        },
+        {
+            "actualLandingTime": "2024-01-15T22:30:00.000+01:00",
+            "actualOffBlockTime": null,
+            "airlineCode": 300,
+            "checkinAllocations": null,
+            "flightName": "ZZ3018",
+            "gate": "E1",
+            "terminal": 1
+        },
+        {
+            "actualLandingTime": null,
+            "actualOffBlockTime": "2024-01-15T23:00:00.000+01:00",
+            "airlineCode": 100,
+            "checkinAllocations": null,
+            "flightName": "XX1019",
+            "gate": "A3",
+            "terminal": 2
+        },
+        {
+            "actualLandingTime": "2024-01-15T23:45:00.000+01:00",
+            "actualOffBlockTime": null,
+            "airlineCode": 400,
+            "checkinAllocations": null,
+            "flightName": "AA4020",
+            "gate": "B4",
+            "terminal": 1
+        }
+    ]
+}
