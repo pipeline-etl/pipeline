@@ -1,0 +1,22 @@
+[
+    {
+        "id": "item-1",
+        "name": "First",
+        "tags": {
+            "alpha": "one",
+            "beta": "two"
+        },
+        "position": "alpha",
+        "tag": "one"
+    },
+    {
+        "id": "item-1",
+        "name": "First",
+        "tags": {
+            "alpha": "one",
+            "beta": "two"
+        },
+        "position": "beta",
+        "tag": "two"
+    }
+]

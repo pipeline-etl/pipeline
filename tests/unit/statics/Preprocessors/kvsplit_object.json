@@ -1,0 +1,10 @@
+[
+    {
+        "id": "item-1",
+        "name": "First",
+        "tags": {
+            "alpha": "one",
+            "beta": "two"
+        }
+    }
+]
