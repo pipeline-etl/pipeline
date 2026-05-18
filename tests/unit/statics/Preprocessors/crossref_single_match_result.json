@@ -1,0 +1,18 @@
+[
+    {
+        "sku": "SKU-101",
+        "parentSku": "SKU-100",
+        "brand": "Acme",
+        "category": "widgets",
+        "parentBrand": "Globex",
+        "parentCategory": "gadgets"
+    },
+    {
+        "sku": "SKU-100",
+        "parentSku": "SKU-100",
+        "brand": "Globex",
+        "category": "gadgets",
+        "parentBrand": "Globex",
+        "parentCategory": "gadgets"
+    }
+]

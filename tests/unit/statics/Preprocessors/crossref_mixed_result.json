@@ -1,0 +1,34 @@
+[
+    {
+        "sku": "SKU-101",
+        "parentSku": "SKU-100",
+        "brand": "Acme",
+        "category": "widgets",
+        "parentBrand": "Globex",
+        "parentCategory": "gadgets"
+    },
+    {
+        "sku": "SKU-100",
+        "parentSku": "SKU-100",
+        "brand": "Globex",
+        "category": "gadgets",
+        "parentBrand": "Globex",
+        "parentCategory": "gadgets"
+    },
+    {
+        "sku": "SKU-201",
+        "parentSku": "SKU-200",
+        "brand": "Initech",
+        "category": "tools",
+        "parentBrand": "Umbrella",
+        "parentCategory": "science"
+    },
+    {
+        "sku": "SKU-200",
+        "parentSku": "SKU-200",
+        "brand": "Umbrella",
+        "category": "science",
+        "parentBrand": "Umbrella",
+        "parentCategory": "science"
+    }
+]

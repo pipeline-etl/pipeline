@@ -1,0 +1,23 @@
+[
+    {
+        "sku": "SKU-101",
+        "parentSku": "SKU-100",
+        "brand": "Acme",
+        "category": "widgets",
+        "date": "2024-01-15"
+    },
+    {
+        "sku": "SKU-100",
+        "parentSku": "SKU-100",
+        "brand": "Globex",
+        "category": "gadgets",
+        "date": "2024-01-14"
+    },
+    {
+        "sku": "SKU-100",
+        "parentSku": "SKU-100",
+        "brand": "Initech",
+        "category": "tools",
+        "date": "2024-01-15"
+    }
+]
