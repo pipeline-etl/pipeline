@@ -1,0 +1,20 @@
+{
+    "source": 0,
+    "equal": "0",
+    "not_equal": 1,
+    "not_strictly_equal": "0",
+    "greater": -10,
+    "lower": 10,
+    "greater_equal": -10,
+    "lower_equal": 10,
+    "regex_match": "/[0-9]/",
+    "regex_no_match": "/[a-z]/",
+    "contains": "This String 0",
+    "not_contains": "That String 1",
+    "in_array": [
+        0
+    ],
+    "not_in_array": [
+        1
+    ]
+}
