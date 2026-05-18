@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+    <users>
+        <user>
+            <name name='John' age='42'>'Jonydoe'</name>
+            <email>john@example.com</email>
+        </user>
+    </users>
+    <flights>
+        <element>
+            <scheduleDate>'2017-05-11'</scheduleDate>
+            <gate>C11</gate>
+        </element>
+    </flights>
+</document>

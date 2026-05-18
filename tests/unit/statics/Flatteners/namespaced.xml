@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns0:message xmlns:ns0="http://www.example.org/2024/flights">
+    <header>
+        <messageId>MSG-001</messageId>
+        <timestamp>2024-01-15T10:00:00.000</timestamp>
+    </header>
+    <body>
+        <ns0:FlightNotification xmlns:ns0="http://www.example.org/2024/flights" Version="1.0">
+            <ns0:Originator CompanyShortName="TEST"/>
+            <ns0:FlightLeg>
+                <ns0:LegIdentifier>
+                    <ns0:Airline>XXA</ns0:Airline>
+                    <ns0:FlightNumber>029</ns0:FlightNumber>
+                    <ns0:DepartureAirport>AAA</ns0:DepartureAirport>
+                    <ns0:ArrivalAirport>BBB</ns0:ArrivalAirport>
+                </ns0:LegIdentifier>
+            </ns0:FlightLeg>
+        </ns0:FlightNotification>
+    </body>
+</ns0:message>

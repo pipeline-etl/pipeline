@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<document>
+    <flights>
+        <lastChanged value="2017-05-11" />
+        <element>
+            <scheduleDate>'2017-05-11'</scheduleDate>
+            <gate>C11</gate>
+        </element>
+    </flights>
+</document>

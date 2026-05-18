@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <wrapper>
+        <items>
+            <a>
+                <id>1</id>
+                <name>one</name>
+            </a>
+            <b>
+                <id>2</id>
+                <name>two</name>
+            </b>
+        </items>
+    </wrapper>
+</root>

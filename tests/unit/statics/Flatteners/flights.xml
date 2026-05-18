@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<airport>
+    <flights>
+        <element>
+            <actualLandingTime>2024-01-15T08:30:00.000+01:00</actualLandingTime>
+            <actualOffBlockTime null="true" />
+            <aircraftType>
+                <iatamain>738</iatamain>
+                <iatasub>738</iatasub>
+            </aircraftType>
+            <checkinAllocations null="true" />
+            <flightName>XX1001</flightName>
+            <gate>A1</gate>
+            <prefixIATA>XX</prefixIATA>
+            <prefixICAO>XXA</prefixICAO>
+        </element>
+        <element>
+            <actualLandingTime>2024-01-15T09:15:00.000+01:00</actualLandingTime>
+            <actualOffBlockTime null="true" />
+            <aircraftType>
+                <iatamain>320</iatamain>
+                <iatasub>320</iatasub>
+            </aircraftType>
+            <checkinAllocations null="true" />
+            <flightName>YY2002</flightName>
+            <gate>B3</gate>
+            <prefixIATA>YY</prefixIATA>
+            <prefixICAO>YYB</prefixICAO>
+        </element>
+        <element>
+            <actualLandingTime>2024-01-15T10:45:00.000+01:00</actualLandingTime>
+            <actualOffBlockTime null="true" />
+            <aircraftType>
+                <iatamain>738</iatamain>
+                <iatasub>738</iatasub>
+            </aircraftType>
+            <checkinAllocations null="true" />
+            <flightName>ZZ3003</flightName>
+            <gate>C5</gate>
+            <prefixIATA>ZZ</prefixIATA>
+            <prefixICAO>ZZC</prefixICAO>
+        </element>
+        <element>
+            <actualLandingTime>2024-01-15T12:30:00.000+01:00</actualLandingTime>
+            <actualOffBlockTime null="true" />
+            <aircraftType>
+                <iatamain>789</iatamain>
+                <iatasub>789</iatasub>
+            </aircraftType>
+            <checkinAllocations null="true" />
+            <flightName>AA4004</flightName>
+            <gate>D2</gate>
+            <prefixIATA>AA</prefixIATA>
+            <prefixICAO>AAD</prefixICAO>
+        </element>
+        <element>
+            <actualLandingTime null="true" />
+            <actualOffBlockTime>2024-01-15T14:00:00.000+01:00</actualOffBlockTime>
+            <aircraftType>
+                <iatamain>321</iatamain>
+                <iatasub>321</iatasub>
+            </aircraftType>
+            <checkinAllocations>
+                <checkinAllocations>
+                    <element>
+                        <startTime>2024-01-15T11:00:00.000+01:00</startTime>
+                        <endTime>2024-01-15T13:30:00.000+01:00</endTime>
+                        <rows>
+                            <rows>
+                                <element>
+                                    <position>1</position>
+                                </element>
+                            </rows>
+                        </rows>
+                    </element>
+                </checkinAllocations>
+            </checkinAllocations>
+            <flightName>BB5005</flightName>
+            <gate>E4</gate>
+            <prefixIATA>BB</prefixIATA>
+            <prefixICAO>BBE</prefixICAO>
+        </element>
+    </flights>
+    <schemaVersion>3</schemaVersion>
+</airport>
