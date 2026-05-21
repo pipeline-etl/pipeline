@@ -1,0 +1,15 @@
+{
+    "variants": [
+        {
+            "color": "red",
+            "size": "M"
+        },
+        {
+            "color": "blue",
+            "weight": 150
+        }
+    ],
+    "tags": [],
+    "name": "Test Product",
+    "stock": 42
+}

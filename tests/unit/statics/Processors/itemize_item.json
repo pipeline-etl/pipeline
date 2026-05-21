@@ -1,0 +1,20 @@
+{
+    "variants": [
+        {
+            "color": "red",
+            "size": "M"
+        },
+        {
+            "color": "blue",
+            "weight": 150
+        }
+    ],
+    "metadata": {
+        "brand": "Acme",
+        "category": "clothing"
+    },
+    "tags": [],
+    "scores": [1, 2, 3],
+    "name": "Test Product",
+    "stock": 42
+}
