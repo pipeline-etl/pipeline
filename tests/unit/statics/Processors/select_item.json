@@ -1,0 +1,16 @@
+{
+    "name": "test-item",
+    "tags": ["alpha", "beta", "gamma"],
+    "metadata": {
+        "version": "1.0",
+        "author": "test"
+    },
+    "entries": [
+        { "type": "A", "value": 10 },
+        { "type": "B", "value": 20 },
+        { "type": "C", "value": 30 }
+    ],
+    "lookup_key": "version",
+    "match_type": "B",
+    "match_field": "type"
+}
