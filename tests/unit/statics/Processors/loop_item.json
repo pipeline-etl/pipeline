@@ -1,0 +1,7 @@
+{
+    "name": "batch-001",
+    "slots": {
+        "morning": "09:00",
+        "afternoon": "14:00"
+    }
+}
