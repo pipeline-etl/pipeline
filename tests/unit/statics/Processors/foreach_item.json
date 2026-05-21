@@ -1,0 +1,16 @@
+{
+    "id": 1,
+    "name": "Test Product",
+    "active": true,
+    "category": null,
+    "variants": [
+        {
+            "sku": "SKU-001",
+            "color": "red"
+        },
+        {
+            "sku": "SKU-002",
+            "color": "blue"
+        }
+    ]
+}
