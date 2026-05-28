@@ -550,6 +550,52 @@ class JsonFlattenerProcessTest extends JsonFlattenerTestCase
         $this->assertEquals('flights', $result[0]['keyName']);
     }
 
+    /**
+     * Test that process() sets NULL for a non-string path value.
+     *
+     * @covers Pipeline\Flatteners\JsonFlattener::process
+     */
+    public function testProcessWithNonStringPathSetsNull(): void
+    {
+        $flights = file_get_contents(TEST_STATICS . '/Flatteners/flights.json');
+
+        $data = [ $flights ];
+
+        $config = [
+            'fields' => [
+                'value' => [ 'path' => TRUE ],
+            ],
+        ];
+
+        $result = $this->class->process($data, $config);
+
+        $this->assertCount(20, $result);
+        $this->assertNull($result[0]['value']);
+    }
+
+    /**
+     * Test that process() sets NULL for a non-string pointer value.
+     *
+     * @covers Pipeline\Flatteners\JsonFlattener::process
+     */
+    public function testProcessWithNonStringPointerSetsNull(): void
+    {
+        $flights = file_get_contents(TEST_STATICS . '/Flatteners/flights.json');
+
+        $data = [ $flights ];
+
+        $config = [
+            'fields' => [
+                'value' => [ 'pointer' => TRUE ],
+            ],
+        ];
+
+        $result = $this->class->process($data, $config);
+
+        $this->assertCount(20, $result);
+        $this->assertNull($result[0]['value']);
+    }
+
 }
 
 ?>

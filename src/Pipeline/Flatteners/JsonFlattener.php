@@ -367,13 +367,13 @@ class JsonFlattener extends Node implements FlattenerInterface
 
                     if (is_array($origin))
                     {
-                        if (array_key_exists('path', $origin))
+                        if (array_key_exists('path', $origin) && is_string($origin['path']))
                         {
                             $element = $origin['path'][0] == '$' ? $source : $object;
 
                             $result[$destination] = $this->resolveJsonPath($element, $origin['path']);
                         }
-                        elseif (array_key_exists('pointer', $origin))
+                        elseif (array_key_exists('pointer', $origin) && is_string($origin['pointer']))
                         {
                             if ($origin['pointer'][0] == '/')
                             {
