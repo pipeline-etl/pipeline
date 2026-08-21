@@ -69,13 +69,11 @@ class DefaultParser extends Parser
             return $data;
         }
 
-        // https://github.com/phpstan/phpstan/issues/12533
         /** @var array<int, ProcessorConfig> $preprocessors */
-        $preprocessors = $config['preprocessors'] ?? []; // @phpstan-ignore varTag.nativeType (ProcessorConfig array union incorrectly collapsed)
+        $preprocessors = $config['preprocessors'] ?? [];
 
-        // https://github.com/phpstan/phpstan/issues/12533
         /** @var array<int, ProcessorConfig> $processors */
-        $processors = $config['processors'] ?? []; // @phpstan-ignore varTag.nativeType (ProcessorConfig array union incorrectly collapsed)
+        $processors = $config['processors'] ?? [];
 
         $this->reportStep('Run Preprocessors');
         $data = $this->runPreprocessors($data, $preprocessors);
