@@ -314,12 +314,7 @@ class Pipeline implements ProcessorRunnerInterface
                 $environments[] = $key;
             }
 
-            // Extracted (rather than inlined into the if below) to dodge a PHPStan false
-            // positive that narrows $environment to NULL in the production branch.
-            // https://github.com/phpstan/phpstan/issues/14966
-            $hasEnvironment = $environment !== NULL && in_array($environment, $environments);
-
-            if ($hasEnvironment)
+            if ($environment !== NULL && in_array($environment, $environments))
             {
                 /** @var SourceConfig $config */
                 $config = $config[$environment];
